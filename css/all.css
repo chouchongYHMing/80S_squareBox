@@ -1,0 +1,336 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'font';
+  src: url("../font/SmileySans-Oblique.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(245, 243, 215, 0.8);
+  }
+
+  body .shell-main {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 18vh;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.6));
+    backdrop-filter: blur(13px);
+  }
+  
+  body .shell-main .logo {
+    width: 220px;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  }
+
+  body .shell-main .logo img {
+    width: 55px;
+    height: 55px;
+  }
+
+  body .shell-main .logo span {
+    font: 100 40px 'font';
+    letter-spacing: 4px;
+  }
+
+body .main { 
+  display: flex;
+  justify-content: center;
+  width: 85%;
+  height: 540px;
+  margin: 125px;
+  background-color: 	rgba(59,4,29,0.4);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+body .item1{
+  flex:2;
+  display: flex;
+  flex-direction: column;
+  background-color: 	 rgba(255, 253, 240, 0.5);
+  margin: 10px;
+}
+
+body .header{
+  flex:1;
+  border: 4px solid rgba(59,4,29,0.4);
+}
+
+body .header span{
+  font: 20 27px 'font';
+  letter-spacing: 2px;
+  padding: 4px;
+}
+
+body .app{
+  flex:13;
+  display: flex;
+  border: 4px solid rgba(59,4,29,0.4);
+}
+
+body .app1{
+  flex-basis: 7%;
+  height: 100%;
+  border: 2px solid rgba(136, 136, 136, 0.4);
+}
+
+body .app1 img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+body .app1 span{
+  position: absolute;
+  font: 40px 'font';
+  letter-spacing: 6px;
+  margin-top: 15px;
+  padding-left: 8px;
+  writing-mode: vertical-rl; 
+  text-orientation: upright; 
+  white-space: nowrap; 
+  z-index: 2;
+  color:rgba(39, 39, 39, 0.8);
+}
+
+body .app2{
+  flex-basis: 7%;
+  height: 100%;
+  border: 2px solid rgba(136, 136, 136, 0.4);
+}
+
+body .app2 img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+body .app2 span{
+  position: absolute;
+  font: 40px 'font';
+  letter-spacing: 6px;
+  margin-top: 80px;
+  padding-left: 8px;
+  writing-mode: vertical-rl; 
+  text-orientation: upright; 
+  white-space: nowrap; 
+  z-index: 2;
+  color:rgba(39, 39, 39, 0.8);
+}
+
+
+body .app3{
+  flex-basis: 7%;
+  height: 100%;
+  border: 2px solid rgba(136, 136, 136, 0.4);
+}
+
+body .app3 img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+body .app3 span{
+  position: absolute;
+  font: 40px 'font';
+  letter-spacing: 6px;
+  margin-top: 145px;
+  padding-left: 8px;
+  writing-mode: vertical-rl; 
+  text-orientation: upright; 
+  white-space: nowrap; 
+  z-index: 2;
+  color:rgba(39, 39, 39, 0.8);
+}
+
+body .app4{
+  flex-basis: 7%;
+  height: 100%;
+  border: 2px solid rgba(136, 136, 136, 0.4);
+}
+
+body .app4 img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+body .app4 span{
+  position: absolute;
+  font: 40px 'font';
+  letter-spacing: 6px;
+  margin-top: 210px;
+  padding-left: 8px;
+  writing-mode: vertical-rl; 
+  text-orientation: upright; 
+  white-space: nowrap; 
+  z-index: 2;
+  color:rgba(39, 39, 39, 0.8);
+}
+
+
+body .app5{
+  flex-basis: 7%;
+  height: 100%;
+  border: 2px solid rgba(136, 136, 136, 0.4);
+}
+
+body .app5 img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+body .app5 span{
+  position: absolute;
+  font: 40px 'font';
+  letter-spacing: 6px;
+  margin-top: 275px;
+  padding-left: 8px;
+  writing-mode: vertical-rl; 
+  text-orientation: upright; 
+  white-space: nowrap; 
+  z-index: 2;
+  color:rgba(39, 39, 39, 0.8);
+}
+
+body .backg{
+  flex-basis: 58%;
+  height: 100%;
+}
+
+body .backg img{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+body .bar{
+  flex-basis: 7%;
+  height: 100%;
+  border: 2px solid rgba(136, 136, 136, 0.4);
+  background-color: 	 rgba(86, 86, 86, 0.05);
+}
+
+.min{
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+  position: absolute;
+  width :30px;
+  padding-left: 12px;
+}
+
+.m{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: solid rgba(255, 255, 255, 0.5) 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+body .second{
+  display: flex;
+  background-color: 	 rgba(255, 253, 240, 0.5);
+  flex:1;
+  flex-direction: column;
+  margin: 10px;
+  border: 4px solid rgba(59,4,29,0.4);
+}
+
+body .item2{
+  flex: 4;
+  flex-direction: column;
+  position: relative;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+body .item2 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body .item2 span{
+  position: absolute;
+  font: 16 21px 'font';
+  letter-spacing: 2px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+body .item3{
+  flex: 3;
+  flex-direction: column;
+  position: relative;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+body .item3 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body .item3 span{
+  position: absolute;
+  font: 16 21px 'font';
+  letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+body .item4{
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  margin: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+body .item4 img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body .item4 span{
+  position: absolute;
+  font: 16 21px 'font';
+  letter-spacing: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
