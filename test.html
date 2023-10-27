@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>悬浮效果</title>
+	<style type="text/css">
+		.container {
+			width: 200px;
+			height: 200px;
+			background-color: #ccc;
+			position: relative;
+			transition: all 0.3s ease-in-out;
+		}
+
+		.container:hover {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			z-index: 1;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+		}
+	</style>
+</head>
+<body>
+	<div class="container"></div>
+</body>
+</html>

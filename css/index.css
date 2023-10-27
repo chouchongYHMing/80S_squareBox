@@ -56,7 +56,7 @@ body .main {
   display: flex;
   justify-content: center;
   width: 85%;
-  height: 540px;
+  height: 640px;
   margin: 125px;
   background-color: 	rgba(59,4,29,0.4);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -278,6 +278,7 @@ body .item2{
   position: relative;
   margin: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: all ease 1s;
 }
 
 body .item2 img{
@@ -291,6 +292,12 @@ body .item2 span{
   font: 16 21px 'font';
   letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.05);
+  color:black;
+}
+
+body .item2:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
 
 body .item3{
@@ -299,6 +306,7 @@ body .item3{
   position: relative;
   margin: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: all ease 1s;
 }
 
 body .item3 img{
@@ -312,6 +320,12 @@ body .item3 span{
   font: 16 21px 'font';
   letter-spacing: 2px;
   background-color: rgba(255, 255, 255, 0.8);
+  color:black;
+}
+
+body .item3:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
 
 body .item4{
@@ -320,6 +334,7 @@ body .item4{
   position: relative;
   margin: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  transition: all ease 1s;
 }
 
 body .item4 img{
@@ -333,4 +348,10 @@ body .item4 span{
   font: 16 21px 'font';
   letter-spacing: 2px;
   background-color: rgba(255, 255, 255, 0.5);
+  color:black;
+}
+
+body .item4:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
