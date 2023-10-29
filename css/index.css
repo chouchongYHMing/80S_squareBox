@@ -24,7 +24,6 @@ body {
     width: 100%;
     height: 60px;
     position: sticky;
-    z-index: 999;
     top: 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 18vh;
@@ -91,88 +90,169 @@ body .app1{
   flex-basis: 7%;
   height: 100%;
   border: 2px solid rgba(136, 136, 136, 0.4);
+  position: relative;
 }
 
 body .app1 img{
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
-body .app1 span{
+body .app1:before{
   position: absolute;
-  font: 40px 'font';
-  letter-spacing: 6px;
-  margin-top: 15px;
-  padding-left: 8px;
-  writing-mode: vertical-rl; 
-  text-orientation: upright; 
-  white-space: nowrap; 
-  z-index: 2;
-  color:rgba(39, 39, 39, 0.8);
+  content: '';
+  background-color:rgba(112, 150, 153, 0.521);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width:100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all ease 0.5s,left 0.8s ease;
+  z-index:100;
+}
+
+body .app1:after{
+  position: absolute;
+  content: '';
+  background-image: url("../image/travelboy.png");
+  background-size: cover;
+  background-position: right;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1361%;
+  z-index:100;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition: all ease 0.8s
+}
+
+body .app1:hover:after{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  cursor: pointer;
+}
+
+body .app1:hover:before{
+  transform: scaleX(1);
+  left: 846px
 }
 
 body .app2{
   flex-basis: 7%;
   height: 100%;
   border: 2px solid rgba(136, 136, 136, 0.4);
+  position: relative;
 }
 
 body .app2 img{
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
-body .app2 span{
+body .app2:before{
   position: absolute;
-  font: 40px 'font';
-  letter-spacing: 6px;
-  margin-top: 80px;
-  padding-left: 8px;
-  writing-mode: vertical-rl; 
-  text-orientation: upright; 
-  white-space: nowrap; 
-  z-index: 2;
-  color:rgba(39, 39, 39, 0.8);
+  content: '';
+  background-color:rgba(235, 181, 65, 0.521);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width:100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all ease 0.5s,left 0.8s ease;
+  z-index:99;
 }
 
+body .app2:after{
+  position: absolute;
+  content: '';
+  background-image: url("../image/stylishradio.png");
+  background-size: cover;
+  background-position: right;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1254%;
+  z-index:99;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition: all ease 0.8s
+}
+
+body .app2:hover:after{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  cursor: pointer;
+}
+
+body .app2:hover:before{
+  transform: scaleX(1);
+  left: 780px
+}
 
 body .app3{
   flex-basis: 7%;
   height: 100%;
   border: 2px solid rgba(136, 136, 136, 0.4);
+  position: relative;
 }
 
 body .app3 img{
-  position: relative;
+  position:absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
-body .app3 span{
+body .app3:before{
   position: absolute;
-  font: 40px 'font';
-  letter-spacing: 6px;
-  margin-top: 145px;
-  padding-left: 8px;
-  writing-mode: vertical-rl; 
-  text-orientation: upright; 
-  white-space: nowrap; 
-  z-index: 2;
-  color:rgba(39, 39, 39, 0.8);
+  content: '';
+  background-color:rgba(255, 221, 129, 0.521);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width:100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all ease 0.5s,left 0.8s ease;
+  z-index:98;
+}
+
+body .app3:after{
+  position: absolute;
+  content: '';
+  background-image: url("../image/yourstory.png");
+  background-size: cover;
+  background-position: right;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1147%;
+  z-index:98;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition: all ease 0.8s
+}
+
+body .app3:hover:after{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  cursor: pointer;
+}
+
+body .app3:hover:before{
+  transform: scaleX(1);
+  left: 714px
 }
 
 body .app4{
   flex-basis: 7%;
   height: 100%;
   border: 2px solid rgba(136, 136, 136, 0.4);
+  position: relative;
 }
 
 body .app4 img{
@@ -180,48 +260,100 @@ body .app4 img{
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
-body .app4 span{
+body .app4:before{
   position: absolute;
-  font: 40px 'font';
-  letter-spacing: 6px;
-  margin-top: 210px;
-  padding-left: 8px;
-  writing-mode: vertical-rl; 
-  text-orientation: upright; 
-  white-space: nowrap; 
-  z-index: 2;
-  color:rgba(39, 39, 39, 0.8);
+  content: '';
+  background-color:rgba(176, 226, 129, 0.521);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width:100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all ease 0.5s,left 0.8s ease;
+  z-index:97;
 }
 
+body .app4:after{
+  position: absolute;
+  content: '';
+  background-image: url("../image/domestic.png");
+  background-size: cover;
+  background-position: right;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1043%;
+  z-index:97;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition: all ease 0.8s
+}
+
+body .app4:hover:after{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  cursor: pointer;
+}
+
+body .app4:hover:before{
+  transform: scaleX(1);
+  left: 648px
+}
 
 body .app5{
   flex-basis: 7%;
   height: 100%;
   border: 2px solid rgba(136, 136, 136, 0.4);
+  position: relative;
 }
 
 body .app5 img{
-  position: relative;
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
-body .app5 span{
+body .app5:before{
   position: absolute;
-  font: 40px 'font';
-  letter-spacing: 6px;
-  margin-top: 275px;
-  padding-left: 8px;
-  writing-mode: vertical-rl; 
-  text-orientation: upright; 
-  white-space: nowrap; 
-  z-index: 2;
-  color:rgba(39, 39, 39, 0.8);
+  content: '';
+  background-color:rgba(166, 94, 146, 0.521);
+  left: 0;
+  top: 0;
+  height: 100%;
+  width:100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all ease 0.5s,left 0.8s ease;
+  z-index:96;
+}
+
+body .app5:after{
+  position: absolute;
+  content: '';
+  background-image: url("../image/designforcar.png");
+  background-size: cover;
+  background-position: right;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 936%;
+  z-index:96;
+  clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+  transition: all ease 0.8s
+}
+
+body .app5:hover:after{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  cursor: pointer;
+}
+
+body .app5:hover:before{
+  transform: scaleX(1);
+  left: 582px
 }
 
 body .backg{
@@ -242,6 +374,7 @@ body .bar{
   height: 100%;
   border: 2px solid rgba(136, 136, 136, 0.4);
   background-color: 	 rgba(86, 86, 86, 0.05);
+  z-index:200;
 }
 
 .min{
@@ -250,7 +383,8 @@ body .bar{
   z-index: 10;
   position: absolute;
   width :30px;
-  padding-left: 12px;
+  padding-left: 15px;
+  padding-top: 12px;
 }
 
 .m{
@@ -260,7 +394,7 @@ body .bar{
   border-radius: 50%;
   border: solid rgba(255, 255, 255, 0.5) 5px;
   background-color: rgba(0, 0, 0, 0.1);
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 body .second{
@@ -289,6 +423,7 @@ body .item2 img{
 
 body .item2 span{
   position: absolute;
+  text-decoration: none;
   font: 16 21px 'font';
   letter-spacing: 2px;
   background-color: rgba(0, 0, 0, 0.05);
@@ -317,6 +452,7 @@ body .item3 img{
 
 body .item3 span{
   position: absolute;
+  text-decoration: none;
   font: 16 21px 'font';
   letter-spacing: 2px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -345,6 +481,7 @@ body .item4 img{
 
 body .item4 span{
   position: absolute;
+  text-decoration: none;
   font: 16 21px 'font';
   letter-spacing: 2px;
   background-color: rgba(255, 255, 255, 0.5);
