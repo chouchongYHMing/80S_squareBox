@@ -51,6 +51,14 @@ body {
     letter-spacing: 4px;
   }
 
+  body .shell-main .logo a {
+    font: 50 40px 'font';
+    letter-spacing: 4px;
+    display: inline-block;
+    white-space: nowrap;
+    margin-left: 355%;
+  }
+
 body .main { 
   display: flex;
   justify-content: center;
@@ -91,6 +99,8 @@ body .app1{
   height: 100%;
   border: 2px solid rgba(136, 136, 136, 0.4);
   position: relative;
+  transition: all ease 1s;
+  z-index:500;
 }
 
 body .app1 img{
@@ -99,6 +109,7 @@ body .app1 img{
   height: 100%;
   object-fit: cover;
   opacity: 0.6;
+  transition: all ease 1s;
 }
 
 body .app1:before{
@@ -112,7 +123,6 @@ body .app1:before{
   transform: scaleX(0);
   transform-origin: left;
   transition: all ease 0.5s,left 0.8s ease;
-  z-index:100;
 }
 
 body .app1:after{
@@ -125,7 +135,6 @@ body .app1:after{
   top: 0;
   height: 100%;
   width: 1361%;
-  z-index:100;
   clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
   transition: all ease 0.8s
 }
@@ -145,6 +154,8 @@ body .app2{
   height: 100%;
   border: 2px solid rgba(136, 136, 136, 0.4);
   position: relative;
+  z-index:490;
+  transition: all ease 1s;
 }
 
 body .app2 img{
@@ -153,6 +164,7 @@ body .app2 img{
   height: 100%;
   object-fit: cover;
   opacity: 0.6;
+  transition: all ease 1s;
 }
 
 body .app2:before{
@@ -166,7 +178,6 @@ body .app2:before{
   transform: scaleX(0);
   transform-origin: left;
   transition: all ease 0.5s,left 0.8s ease;
-  z-index:99;
 }
 
 body .app2:after{
@@ -179,7 +190,6 @@ body .app2:after{
   top: 0;
   height: 100%;
   width: 1254%;
-  z-index:99;
   clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
   transition: all ease 0.8s
 }
@@ -199,6 +209,8 @@ body .app3{
   height: 100%;
   border: 2px solid rgba(136, 136, 136, 0.4);
   position: relative;
+  z-index:480;
+  transition: all ease 1s;
 }
 
 body .app3 img{
@@ -207,6 +219,7 @@ body .app3 img{
   height: 100%;
   object-fit: cover;
   opacity: 0.6;
+  transition: all ease 1s;
 }
 
 body .app3:before{
@@ -220,7 +233,6 @@ body .app3:before{
   transform: scaleX(0);
   transform-origin: left;
   transition: all ease 0.5s,left 0.8s ease;
-  z-index:98;
 }
 
 body .app3:after{
@@ -233,7 +245,6 @@ body .app3:after{
   top: 0;
   height: 100%;
   width: 1147%;
-  z-index:98;
   clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
   transition: all ease 0.8s
 }
@@ -253,6 +264,8 @@ body .app4{
   height: 100%;
   border: 2px solid rgba(136, 136, 136, 0.4);
   position: relative;
+  z-index:470;
+  transition: all ease 1s;
 }
 
 body .app4 img{
@@ -261,6 +274,7 @@ body .app4 img{
   height: 100%;
   object-fit: cover;
   opacity: 0.6;
+  transition: all ease 1s;
 }
 
 body .app4:before{
@@ -274,7 +288,6 @@ body .app4:before{
   transform: scaleX(0);
   transform-origin: left;
   transition: all ease 0.5s,left 0.8s ease;
-  z-index:97;
 }
 
 body .app4:after{
@@ -287,7 +300,6 @@ body .app4:after{
   top: 0;
   height: 100%;
   width: 1043%;
-  z-index:97;
   clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
   transition: all ease 0.8s
 }
@@ -307,6 +319,8 @@ body .app5{
   height: 100%;
   border: 2px solid rgba(136, 136, 136, 0.4);
   position: relative;
+  z-index:460;
+  transition: all ease 1s;
 }
 
 body .app5 img{
@@ -315,6 +329,7 @@ body .app5 img{
   height: 100%;
   object-fit: cover;
   opacity: 0.6;
+  transition: all ease 1s;
 }
 
 body .app5:before{
@@ -328,7 +343,6 @@ body .app5:before{
   transform: scaleX(0);
   transform-origin: left;
   transition: all ease 0.5s,left 0.8s ease;
-  z-index:96;
 }
 
 body .app5:after{
@@ -341,7 +355,6 @@ body .app5:after{
   top: 0;
   height: 100%;
   width: 936%;
-  z-index:96;
   clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
   transition: all ease 0.8s
 }
@@ -374,27 +387,122 @@ body .bar{
   height: 100%;
   border: 2px solid rgba(136, 136, 136, 0.4);
   background-color: 	 rgba(86, 86, 86, 0.05);
-  z-index:200;
+  z-index:700;
 }
 
 .min{
   display: flex;
   flex-direction: column;
-  z-index: 10;
+  z-index: 700;
   position: absolute;
   width :30px;
   padding-left: 15px;
   padding-top: 12px;
 }
 
-.m{
+.link1{
   width: 20px;
   height: 20px;
-  cursor: pointer;
+  margin-bottom: 35px;
+}
+
+.m1{
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   border: solid rgba(255, 255, 255, 0.5) 5px;
   background-color: rgba(0, 0, 0, 0.1);
-  margin-bottom: 25px;
+  cursor: pointer;
+  transition: all ease 1s;
+}
+
+.m1:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.link2{
+  width: 20px;
+  height: 20px;
+  margin-bottom: 35px;
+}
+
+.m2{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid rgba(255, 255, 255, 0.5) 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all ease 1s;
+}
+
+.m2:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.link3{
+  width: 20px;
+  height: 20px;
+  margin-bottom: 35px;
+}
+
+.m3{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid rgba(255, 255, 255, 0.5) 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all ease 1s;
+}
+
+.m3:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.link4{
+  width: 20px;
+  height: 20px;
+  margin-bottom: 35px;
+}
+
+.m4{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid rgba(255, 255, 255, 0.5) 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all ease 1s;
+}
+
+.m4:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.link5{
+  width: 20px;
+  height: 20px;
+  margin-bottom: 45px;
+}
+
+.m5{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid rgba(255, 255, 255, 0.5) 5px;
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all ease 1s;
+}
+
+.m5:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
 }
 
 body .second{
