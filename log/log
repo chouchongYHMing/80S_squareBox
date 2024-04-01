@@ -1,0 +1,9 @@
+time="2024-03-27T09:37:06+08:00" level=info Agent="ApiPOST Runtime +https://www.apipost.cn" DataSize=1084 HostName=OminMacBook-Pro.local Ip=127.0.0.1 Method=GET Path="/api/v1/users?pagesize=&pagenum=" SpendTime="1 ms" status=200
+:08:05+08:00" level=info Agent="ApiPOST Runtime +https://www.apipost.cn" DataSize=51 HostName=OminMacBook-Pro.local Ip=127.0.0.1 Method=POST Path=/api/v1/user/add SpendTime="0 ms" status=200
+time="2024-03-27T09:08:10+08:00" level=info Agent="ApiPOST Runtime +https://www.apipost.cn" DataSize=29 HostName=OminMacBook-Pro.local Ip=127.0.0.1 Method=POST Path=/api/v1/user/add SpendTime="99 ms" status=200
+time="2024-03-27T09:09:18+08:00" level=info Agent="ApiPOST Runtime +https://www.apipost.cn" DataSize=29 HostName=OminMacBook-Pro.local Ip=127.0.0.1 Method=POST Path=/api/v1/user/add SpendTime="91 ms" status=200
+time="2024-03-27T09:09:56+08:00" level=info Agent="ApiPOST Runtime +https://www.apipost.cn" DataSize=71 HostName=OminMacBook-Pro.local Ip=127.0.0.1 Method=POST Path=/api/v1/login SpendTime="2 ms" status=200
+time="2024-03-27T09:10:06+08:00" level=info Agent="ApiPOST Runtime +https://www.apipost.cn" DataSize=241 HostName=OminMacBook-Pro.local Ip=127.0.0.1 Method=POST Path=/api/v1/login SpendTime="84 ms" status=200
+time="2024-03-27T09:10:17+08:00" level=info Agent="ApiPOST Runtime +https://www.apipost.cn" DataSize=74 HostName=OminMacBook-Pro.local Ip=127.0.0.1 Method=POST Path=/api/v1/login SpendTime="87 ms" status=200
+time="2024-03-27T09:10:24+08:00" level=info Agent="ApiPOST Runtime +https://www.apipost.cn" DataSize=80 HostName=OminMacBook-Pro.local Ip=127.0.0.1 Method=POST Path=/api/v1/login SpendTime="85 ms" status=200
+thod=POST Path=/api/v1/user/add SpendTime="0 ms" status=200
